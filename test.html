@@ -1,0 +1,875 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--<meta name="viewport" content="width=device-width, user-scalable=no" />-->
+<meta name="viewport" content="width=1024, user-scalable=no">
+<title>ibe_1a</title>
+
+<!--                                        IBE Scripte laden                                                 -->
+<!-- ******************************************************************************************************** -->
+<!-- apple fullscreen -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- apple icon -->
+<link rel="apple-touch-icon" href="./icon.png" />
+<link rel="stylesheet" href="lib/css/ibe.css" />
+<link href="/navigationsstyle.css" rel="stylesheet" type="text/css" />
+
+<!-- //GA TRACKING -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36799962-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https:/'+'/ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</head>
+
+<!-- Ab hier gehts es los -->
+
+<body style="margin:0">
+
+
+
+<div class="IBE noscr" id="IBE1">
+	
+    
+	<div class="stage" style="width:0px; height:auto; background-color:white;"><!-- overflow:hidden;">-->
+        <!-- TODO: READ width, height from hozi-data.xml -->
+        <div class="layer" style="top:0px">
+                        
+          	<div id="bg" style="width:1024px; top: 0px; left: 0px; opacity:1; z-index:-1;">
+            	<img src="media/links/MM.JPG" id="hintergrund_l" style="width:164px; float: left;" />
+            	<img src="media/rechts/IMG_2025.JPG" id="hintergrund_r" style="width:860px; float: left;" />
+
+            </div>
+            
+        </div>
+   
+		
+	  <div class="layer" id="automatic" style="top: 0px; left: 0px;position:absolute;">  
+<!-- ******************************************************************************************************** -->
+<!--                                                                                                          -->
+<!--                                        HOTSPOTDISPLAY                                                    -->
+<!--                                                                                                          -->
+<!--                                                                                                          -->
+<!-- ******************************************************************************************************** -->
+      
+    <!-- Geiger-Müller-Zähler -->
+    <div id="hz_1" class="hzslider" style="z-index:10; width: 319px; height: 100px; top: 433px; left: 705px; opacity: 0.1; background-color: burlywood; position: absolute;">
+    <div id="hz_1grab" class="grabble" style="width: 100px; height: 100px; position: absolute; top: 0px; left: 0px; background-color: red"></div>
+	</div>
+                
+    <!-- Schiene Oben -->                   
+    <div id="hz_2" class="hzslider" style="z-index:10; width: 50px; height: 149px; top: 183px; left: 118px; opacity: 0.1; background-color: burlywood; position: absolute;">
+	<div id="hz_1grab" class="grabble" style="width:50px; height:75px; position:absolute; top:33px; left:0px; background-color:red"></div>
+    </div>
+                
+    <!-- Schiene Unten -->         
+    <div id="hz_3" class="hzslider" style="z-index:10; width: 50px; height: 149px; top: 606px; left: 104px; opacity: 0.1; background-color: burlywood; position: absolute;">
+	<div id="hz_1grab" class="grabble" style="width:50px; height:75px; position:absolute; top:33px; left:0px; background-color:red"></div>
+	</div>
+    
+    <!-- Start-Button -->
+    <div id="hz_27" class="hzswitch" style="z-index: 20000; width: 17px; height: 17px; top: 362px; left: 736px; opacity: 0.0; background-color: aliceblue; position: absolute;"></div>
+
+    <!-- Stopp-Button -->
+    <div id="hz_28" class="hzswitch" style="z-index: 19998; width: 17px; height: 17px; top: 362px; left: 756px; opacity: 0.0; background-color: aliceblue; position: absolute;"></div>
+            
+    <!-- Null-Button -->            
+    <div id="hz_29" class="hzswitch" style="z-index: 19999; width: 17px; height: 17px; top: 362px; left: 776px; opacity: 0.0; background-color: aliceblue; position: absolute;"></div>
+
+    <!-- Time-Button -->            
+    <div id="hz_30" class="hzswitch" style="z-index: 19997; width: 17px; height: 17px; top: 359px; left: 632px; opacity: 0.0; background-color: aliceblue; position: absolute;"></div>
+
+
+
+       
+<div id="einer" style="width:1024px; height:768px;z-index:9;  position:absolute; opacity:1.0;top:0px; left:-1px;"><img style="height:768;width:1024px;opacity:1.0;" id="einer_img" src="media/ziffernklein/xxx0.png" /></div>
+
+<div id="zehner" style="width:1024px; height:768px;z-index:9;  position:absolute; opacity:1.0;top:0px; left:-2px;"><img style="height:768;width:1024px;opacity:0.0;" id="zehner_img" src="media/ziffernklein/xx0x.png" /></div>
+
+<div id="hundert" style="width:1024px; height:768px;z-index:9;  position:absolute; opacity:1.0;top:0px; left:-2px;"><img style="height:768;width:1024px;opacity:0.0;" id="hundert_img" src="media/ziffernklein/x0xx.png" /></div>
+
+    <div id="gate" style="width:1024px; height:768px;z-index:9;  position:absolute; opacity:1.0;top:139px; left:-42px;"><img style="height:768;width:1024px;opacity:1.0;" id="gate_img" src="media/gate_1.png" /></div>
+
+          <div id="const_lampen" style="width:860px; height:768px;z-index:9;  position:absolute; opacity:1.0;top:0px; left:164px;"><img style="height:768;width:860px;opacity:1.0;" id="const_lampen_img" src="media/const_lampen.png" /></div>          
+  
+          <div id="start_stop" style="width:860px; height:768px;z-index:9;  position:absolute; opacity:1.0;top:0px; left:164px;"><img style="height:768;width:860px;opacity:1.0;" id="start_stop_img" src="media/stop.png" /></div>                 
+
+          <div id="ziffernhintergrund" style="width:860px; height:768px;z-index:8;  position:absolute; opacity:1.0;top:170px; left:87px;"><img style="height:768;width:860px;opacity:1.0;" id="ziffernhintergrund_img" src="media/ziffernhintergrund.png" /></div>  
+
+ <div id="tausend" style="width:1024px; height:768px;z-index:9;  position:absolute; opacity:1.0;top:0px; left:-2px;"><img style="height:768;width:1024px;opacity:0.0;" id="tausend_img" src="media/ziffernklein/4xxx.png" /></div>         
+					
+<!--[-=HOTSPOTDISPLAY=-]-->
+	</div>
+            
+        <div class="preload">
+        	<!-- LOADER -->
+  		</div>
+        
+        <div id="watermark">
+		</div>
+              <!--[-=NAVIGATION - ANFANG=-]-->     
+     
+      
+     <!--[-=NAVIGATION - Ende=-]--> 
+     
+     
+     
+     
+</div>
+</div>
+
+<div id="ibeCloseBtn">
+</div>
+
+
+</body>
+</html>
+
+
+
+<!-- ******************************************************************************************************** -->
+<!--                                                                                                          -->
+<!--                                        IBE Scripte laden                                                 -->
+<!--                                                                                                          -->
+<!--                                                                                                          -->
+<!-- ******************************************************************************************************** -->
+
+
+
+
+<script src="lib/js/jquery-1.7.2.min.js"></script>
+<script src="lib/js/jquery-ui.min.js"></script>
+<script src="lib/js/jquery.ui.touch-punch.min.js"></script>			
+<script src="lib/js/jQtools/slider.js"></script>
+<script src="lib/js/jQtools/knob.js"></script>
+<script src="lib/js/jQtools/mc.js"></script>
+<script src="lib/js/reel.js"></script>
+<script src="lib/js/jquery.hammer.min.js"></script>
+
+				
+<!--[-=LIBRARIES=-]-->
+
+
+
+
+<script src="/static/js/socket.io.min.js"></script>
+<script src="/static/js/sebsocket.js"></script>
+
+<SCRIPT>
+    //Prevent scrolling
+    function stopScrolling(touchEvent) { touchEvent.preventDefault();   }
+    document.addEventListener('touchmove', stopScrolling, false);
+
+ 
+</SCRIPT>
+
+<script type="text/javascript">
+
+var meinIBE;
+
+ $(function()
+ {
+	 
+	$('#ibeCloseBtn').css(
+	{
+		'position':'absolute',
+		'top':'25px',
+		'right':'34px',
+		'width':'56px',
+		'height':'56px',
+		'background-image':'url(/static/img/close.png)',
+		'z-index':'2000',
+		'cursor':'pointer',
+	}).click(function()
+	{
+		var currentUrl = $(location).attr('href');
+		//if (!currentUrl.endsWith("/")) currentUrl += "/";
+		var src =  currentUrl.replace(/ibe/, "hozi");
+		
+		var src =  src.replace("&source=hozi", "");
+		
+		window.location.href=src;
+	});
+	
+	$('#watermark').css(
+	{
+		position:'absolute',
+		top:$('.stage').eq(0).height()-40-15+'px',
+		left:'15px',
+		width:'105px',
+		height:'40px',
+		'background-image':'url(./hozi_watermark_40.png)'
+	}).click(function(){window.location.href="http:/'+'/www.tetfolio.de:4749"});
+	
+	setWatermark();
+	
+	//ugly
+	function setWatermark()
+	{
+		if ($('.stage').height()==0){setTimeout(setWatermark,25);}
+		else{$('#watermark').css('top',$('.stage').height()-55+'px');}
+	}
+	//\ugly
+	
+	window.scrollTo(0, 1);
+	init();
+	});
+	
+	
+
+
+
+function init()
+{
+	$('body,body *').disableSelection();
+	
+	if (typeof(sebsocketInit) != "undefined" && sebsocketInit != undefined)
+	{
+		// 0o
+		sebsocketInit();
+		
+		/**
+		 * Anm.:
+		 * Bitte dieses in eine eigene JS datei auslagern,
+		 * das hat nix in einem template zu suchen ;)
+		 * -jk
+		 */
+		var result_username = /username=(\w+)/.exec(window.location.href.split("?").pop());
+		var username = (result_username != null)?result_username[1]:"";
+		var result_tetfoliopage = /tetfoliopage=(\w+)/.exec(window.location.href.split("?").pop());
+		var tetfoliopage = (result_tetfoliopage != null)?result_tetfoliopage[1]:"";
+		
+		var result_source = /source=(\w+)/.exec(window.location.href.split("?").pop());
+		var source = (result_source != null)?result_source[1]:"";
+		if(source!="hozi")
+		{
+			$('#ibeCloseBtn').hide();
+		}
+		else
+		{
+			console.log("username: " +username+" , tetpage: "+tetfoliopage+" , source: "+source);
+			sebSend("ibegen:done", $(location).attr('href'), "titleEXAMPLETODO" , "media/bg_image.JPG", username, tetfoliopage);	
+		}
+	}
+	
+	var ua = navigator.userAgent;
+	var clickEvent = (ua.match(/iPad/i)) ? "touchstart" : "click";
+	
+//<!-- ******************************************************************************************************** -->
+//<!--                                                                                                          -->
+//<!--                                        HOTSPOTLOGIC                                                      -->
+//<!--                                                                                                          -->
+//<!--                                                                                                          -->
+//<!-- ******************************************************************************************************** -->
+	
+
+
+				
+	// *********** hz_1 preloader SLIDER ***********
+		
+/*
+	var hz_1tempImg = [];
+	//var preloadedImages_hz_1 = ['media/bg_image.JPG'].concat([]);
+	var preloadedImages_hz_1 = [];
+	for(var i=0;i<20;i++) {
+	    hz_1tempImg[i] = new Image();
+	    hz_1tempImg[i].src = preloadedImages_hz_1[i];
+	}
+	
+	*/
+	/*	
+	$('.grabble', '#hz_1')
+	.css("left", parseInt($('.grabble', '#hz_1').css("left")) - parseInt($('.grabble', '#hz_1').css("width")) / 2  +"px" )
+	.css("top", parseInt($('.grabble', '#hz_1').css("top")) - parseInt($('.grabble', '#hz_1').css("height")) / 2   +"px" );
+	*/
+	
+	var grabberOffset = {
+	x: parseInt($('.grabble', '#hz_1').css("width")) / 2,
+	y: parseInt($('.grabble', '#hz_1').css("width")) / 2
+	 }
+	
+		
+	//targets
+	var hz_1_targetIDs=("").split(' ');
+	
+	//console.log(0+grabberOffset.x);
+	$('.grabble', '#hz_1').IBEslider(
+	{
+		totalFrames:51,
+		startFrame:1,
+		xStart:0+grabberOffset.x, // correct offset, /2 from grabber size
+		yStart:0+grabberOffset.y,
+		xEnd:250+grabberOffset.x,
+		yEnd:0+grabberOffset.y,
+		changeFrame:function(arg)
+		{
+//changeframe
+			Bildwaehlen();
+			
+
+			for (id in hz_1_targetIDs)
+			{
+				var currentTarget=$('#'+hz_1_targetIDs[id]);
+				if(currentTarget.length!=0)	currentTarget.IBEmc('currentFrame',arg);
+			}
+		}
+	});
+	
+	
+//hz_2
+	var grabberOffset = {
+	x: parseInt($('.grabble', '#hz_2').css("width")) / 2,
+	y: parseInt($('.grabble', '#hz_2').css("width")) / 2
+	 }
+	
+		
+	//targets
+	var hz_2_targetIDs=("").split(' ');
+	
+	//console.log(0+grabberOffset.x);
+	$('.grabble', '#hz_2').IBEslider(
+	{
+		totalFrames:3,
+		startFrame:2,
+		xStart:0+grabberOffset.x, // correct offset, /2 from grabber size
+		yStart:0+grabberOffset.y,
+		xEnd:0+grabberOffset.x,
+		yEnd:100+grabberOffset.y,
+		changeFrame:function(arg)
+		{
+//changeframe
+			Bildwaehlen();
+			
+
+			for (id in hz_2_targetIDs)
+			{
+				var currentTarget=$('#'+hz_2_targetIDs[id]);
+				if(currentTarget.length!=0)	currentTarget.IBEmc('currentFrame',arg);
+			}
+		}
+	});
+	
+	
+//hz_3
+var grabberOffset = {
+	x: parseInt($('.grabble', '#hz_3').css("width")) / 2,
+	y: parseInt($('.grabble', '#hz_3').css("width")) / 2
+	 }
+	
+		
+	//targets
+	var hz_3_targetIDs=("").split(' ');
+	
+	//console.log(0+grabberOffset.x);
+	$('.grabble', '#hz_3').IBEslider(
+	{
+		totalFrames:3,
+		startFrame:2,
+		xStart:0+grabberOffset.x, // correct offset, /2 from grabber size
+		yStart:0+grabberOffset.y,
+		xEnd:0+grabberOffset.x,
+		yEnd:100+grabberOffset.y,
+		changeFrame:function(arg)
+		{
+//changeframe
+			Bildwaehlen();
+			
+
+			for (id in hz_3_targetIDs)
+			{
+				var currentTarget=$('#'+hz_3_targetIDs[id]);
+				if(currentTarget.length!=0)	currentTarget.IBEmc('currentFrame',arg);
+			}
+		}
+	});
+	
+		// *********** hz_2 preloader SWITCH ***********
+	/*var hz_2tempImg = [];
+	var preloadedImages_hz_2 = [].concat(['media/bg_image.JPG']);
+	
+	for(var i=0;i<2;i++) {
+	    hz_2tempImg[i] = new Image();
+	    hz_2tempImg[i].src = preloadedImages_hz_2[i];
+	}*/
+	
+	//targets
+var hz_27_targetIDs=("").split(' ');
+				
+var hz_27index = 1;
+	
+$("#hz_27").on(clickEvent, function()
+{
+		
+		//$("img", "#bg").attr("src", hz_2tempImg[hz_2index].src)
+		
+	hz_27index = (hz_27index + 1)%2;
+	if(hz_27index==0) hz_27index = 2;
+		
+	for (id in hz_27_targetIDs)
+	{
+		var currentTarget=$('#'+hz_27_targetIDs[id]);
+		if(currentTarget.length!=0)	currentTarget.IBEmc('currentFrame',hz_27index);
+	}	
+		
+});
+
+	// *********** hz_28 preloader SWITCH ***********
+	/*var hz_28tempImg = [];
+	var preloadedImages_hz_28 = [].concat(['media/bg_image.JPG']);
+	
+	for(var i=0;i<2;i++) {
+	    hz_28tempImg[i] = new Image();
+	    hz_28tempImg[i].src = preloadedImages_hz_28[i];
+	}*/
+	
+	//targets
+	var hz_28_targetIDs=("").split(' ');
+				
+	var hz_28index = 1;
+	
+	$("#hz_28").on(clickEvent, function()
+	{
+		
+		//$("img", "#bg").attr("src", hz_28tempImg[hz_28index].src)
+		
+		hz_28index = (hz_28index + 1)%2;
+		if(hz_28index==0) hz_28index = 2;
+		
+		for (id in hz_28_targetIDs)
+		{
+			var currentTarget=$('#'+hz_28_targetIDs[id]);
+			if(currentTarget.length!=0)	currentTarget.IBEmc('currentFrame',hz_28index);
+		}	
+		
+	});
+
+	
+	
+		
+				
+	
+//[-=HOTSPOTLOGIC=-]
+
+//rechts
+
+var Bildadresse_r = new Array(52);
+for (var i = 1; i < 52; i++){
+	Bildadresse_r[i] = "media/rechts/IMG_20"+[24+i]+".JPG";
+}
+
+var Bildadresse_start_stop = new Array(3);
+var geladenesBild_start_stop = new Array(3);
+for (var i = 1; i < 3; i++){
+	Bildadresse_start_stop[1] = "media/start.png";
+	Bildadresse_start_stop[2] = "media/stop.png";
+	geladenesBild_start_stop[i] = new Image();
+	geladenesBild_start_stop[i].src = Bildadresse_start_stop[i];
+}
+
+
+
+
+var gateadresse = new Array(5);
+for (var i = 1; i < 5; i++){
+	gateadresse[i] = "media/gate_"+[i]+".png";
+}
+var geladenesBild_Gate = new Array(5);
+for(var i = 1; i < 5; i++){
+	geladenesBild_Gate[i] = new Image();
+	geladenesBild_Gate[i].src = gateadresse[i];
+}
+
+
+var geladenesBild_r = new Array(52);
+for(var i = 1; i < 52; i++){
+	geladenesBild_r[i] = new Image();
+	geladenesBild_r[i].src = Bildadresse_r[i];
+}
+
+//links
+
+var Bildadresse_l = new Array(4);
+for (var i = 1; i < 4; i++) {
+	Bildadresse_l[i]=new Array(4);
+}
+
+Bildadresse_l[3][3]="media/links/UU.JPG";
+Bildadresse_l[3][2]="media/links/UM.JPG";
+Bildadresse_l[3][1]="media/links/UO.JPG";
+Bildadresse_l[2][3]="media/links/MU.JPG";
+Bildadresse_l[2][2]="media/links/MM.JPG";
+Bildadresse_l[2][1]="media/links/MO.JPG";
+Bildadresse_l[1][3]="media/links/OU.JPG";
+Bildadresse_l[1][2]="media/links/OM.JPG";
+Bildadresse_l[1][1]="media/links/OO.JPG";
+
+var geladenesBild_l = new Array(4);
+for (var i = 1; i < 4; i++) {
+	geladenesBild_l[i]=new Array(4);
+}
+
+for (var i = 1; i < 4; i++) {
+	for (var j = 1; j < 4; j++) {
+		geladenesBild_l[i][j]=new Image();
+		geladenesBild_l[i][j].src = Bildadresse_l[i][j];
+	}
+}
+
+var x = 5;
+var d_1 = 0;
+var d_2 = 0;
+var mu_1 = 0;
+var mu_2 = 0;
+mu_Cu = 60;
+mu_Al = 16;
+mu_0 = 0;
+
+function Bildwaehlen(){
+	//rechts
+	for(var i = 1; i < 52; i++){
+		if($('.grabble','#hz_1').IBEslider('currentFrame')==i){
+			document.getElementById("hintergrund_r").src=geladenesBild_r[i].src;
+			x = (4.5 + 0.5 * i);
+		}
+	}
+	
+	//links
+	for (var i = 1; i<4; i++) {
+		for (var j=1;j<4;j++) {
+			if($('.grabble','#hz_2').IBEslider('currentFrame')==i && $('.grabble','#hz_3').IBEslider('currentFrame')==j) {
+			document.getElementById("hintergrund_l").src=geladenesBild_l[i][j].src;
+				switch(i) {
+				case 1:
+					d_1 = 0.1;
+					mu_1 = mu_Al;
+					break;
+				case 2:
+					d_1 = 0;
+					mu_1 = mu_0;
+					break;
+				case 3:
+					d_1 = 0.01;
+					mu_1 = mu_Cu;
+					break;
+				};
+				switch(j) {
+				case 1:
+					d_2 = 0.3;
+					mu_2 = mu_Al;
+					break;
+				case 2:
+					d_2 = 0;
+					mu_2 = mu_0;
+					break;
+				case 3:
+					d_2 = 0.08;
+					mu_2 = mu_Cu;
+					break;
+				};
+			};
+		}; 
+	};
+};
+
+
+//*********
+var dauer;
+var show;
+zahl = 0;
+var lamda = 7.7*Math.pow(10,-13);
+var t = 1; //in sekunden
+var intervallzeit = 10;
+var aktuellezeit = 0;
+
+var soundnummer=0;
+
+var sound = new Array(10);
+for(var i=0; i<10;i++){
+sound[i] = new Audio("media/plop.mp3"); // buffers automatically when created
+}
+
+function simulation(){
+	P = Math.exp(-(d_1 * mu_1 + d_2 * mu_2)/10) * 2.125 / x / x;
+	var min = 0;
+	var max = 1;
+	var randomnumber = (Math.random() * (max - min)) + min;
+	ntimes += 1; 
+
+		if(randomnumber<=P){
+			sound[soundnummer].play();
+			sound[soundnummer].currentTime=0
+			soundnummer+=1;
+			if(soundnummer>=10){soundnummer=0;}
+			if(hz_28index==1 && ntimes*10.0 <= dauer){zahl+=1;}
+
+
+	
+
+			
+
+		
+		
+	}
+};
+
+// Start-Schalter
+function Start () {
+document.getElementById("start_stop_img").src=geladenesBild_start_stop[1].src;
+hz_28index=1;
+switch (Gate_Status){
+case 1:
+//dauer = parseInt(window.prompt("Dauer in ms:", ""));
+dauer=99999999999999999;
+break;
+case 2:
+dauer=10000;
+break;
+case 3:
+dauer=60000;
+break;
+case 4:
+dauer=100000;
+break;
+
+default:
+alert("error");
+break;
+}
+
+	zahl = 0;
+	ntimes = 0;
+	ziffern_darstellen(zahl);
+	funktion_interval_ausfuehren();
+};
+var status_interval_funktion;
+function funktion_interval_ausfuehren() {
+	status_interval_funktion = setInterval(function(){simulation();ziffern_darstellen(zahl);}, intervallzeit);
+}
+$("#hz_27").on(clickEvent, Start);
+
+// Stop-Schalter
+function Stop () {
+hz_28index=0;
+//	P = Math.exp(-(d_1 + d_2) * 30) * 2.125 / x / x;
+//	alert(P);
+document.getElementById("start_stop_img").src=geladenesBild_start_stop[2].src;
+};
+$("#hz_28").on(clickEvent, Stop);
+
+
+// Null-Schalter
+function Null () {
+	zahl = 0;
+	ziffern_darstellen(zahl);	
+};
+$("#hz_29").on(clickEvent, Null);
+
+// Gate-Schalter
+var Gate_Status=1;
+function Gate () {
+	Stop();
+	Null();
+	Gate_Status+=1;
+	if(Gate_Status>=5){Gate_Status=1;}
+
+	document.getElementById("gate_img").src=geladenesBild_Gate[Gate_Status].src;
+	//P = Math.exp(-(d_1 + d_2) * 30) * 2.125 / x / x;
+	//alert(P);
+};
+$("#hz_30").on(clickEvent, Gate);
+
+/*		
+simulation();
+
+
+
+//dauer = parseInt(window.prompt("Dauer:", ""));
+
+});
+
+//
+var status_interval_funktion;
+
+function funktion_interval_ausfuehren() {
+status_interval_funktion=setInterval(function(){simulation();}, 20);
+
+}
+*/
+
+
+// ziffern bilder laden
+//tausend
+var adresse_tausend = new Array(10);
+
+for (var i = 0; i < 10; i++) {
+adresse_tausend[i]="media/ziffernklein/"+[i]+"xxx.png";
+}
+
+var geladene_tausend = new Array(10);
+for(var i=0;i<10;i++){
+	geladene_tausend[i] = new Image();
+	geladene_tausend[i].src = adresse_tausend[i];
+}
+
+//einer
+var adresse_einer = new Array(10);
+
+for (var i = 0; i < 10; i++) {
+adresse_einer[i]="media/ziffernklein/xxx"+[i]+".png";
+}
+
+var geladene_einer = new Array(10);
+for(var i=0;i<10;i++){
+	geladene_einer[i] = new Image();
+	geladene_einer[i].src = adresse_einer[i];
+
+}
+
+//zehner
+var adresse_zehner = new Array(10);
+
+for (var i = 0; i < 10; i++) {
+adresse_zehner[i]="media/ziffernklein/xx"+[i]+"x.png";
+}
+
+var geladene_zehner = new Array(10);
+for(var i=0;i<10;i++){
+	geladene_zehner[i] = new Image();
+	geladene_zehner[i].src = adresse_zehner[i];
+
+}
+//hundert
+var adresse_hundert = new Array(10);
+
+for (var i = 0; i < 10; i++) {
+adresse_hundert[i]="media/ziffernklein/x"+[i]+"xx.png";
+}
+
+var geladene_hundert = new Array(10);
+for(var i=0;i<10;i++){
+	geladene_hundert[i] = new Image();
+	geladene_hundert[i].src = adresse_hundert[i];
+
+}
+
+
+
+
+//*** Zahl in Ziffern zerlegen
+
+var zahl = 0;
+var tmpString = "";
+var zahlArray = new Array(4);
+
+function ziffern_darstellen(zahl){
+
+
+if(zahl<10){
+tmpString="000"+zahl;
+zehner_img.style.opacity=0;
+hundert_img.style.opacity=0;
+tausend_img.style.opacity=0;
+}
+if(zahl>10 && zahl < 100){
+tmpString="00"+zahl;
+zehner_img.style.opacity=1;
+hundert_img.style.opacity=0;
+tausend_img.style.opacity=0;
+}
+if(zahl>100 && zahl < 1000){
+tmpString="0"+zahl;
+zehner_img.style.opacity=1;
+hundert_img.style.opacity=1;
+tausend_img.style.opacity=0;
+}
+
+if(zahl>=1000 && zahl < 10000 ){
+tmpString=""+zahl;
+tausend_img.style.opacity=1;
+}
+if(zahl>10000){
+tmpString="9999";
+}
+
+
+zahlArray[0] = parseInt(tmpString.charAt(0));
+zahlArray[1] = parseInt(tmpString.charAt(1));
+zahlArray[2] = parseInt(tmpString.charAt(2));
+zahlArray[3] = parseInt(tmpString.charAt(3));
+
+document.getElementById("einer_img").src=geladene_einer[zahlArray[3]].src;
+document.getElementById("zehner_img").src=geladene_zehner[zahlArray[2]].src;
+document.getElementById("hundert_img").src=geladene_hundert[zahlArray[1]].src;
+document.getElementById("tausend_img").src=geladene_tausend[zahlArray[0]].src;
+}
+
+/*
+var ntimes=0;
+var P=0;
+var lamda = 7.7*Math.pow(10,-13);
+var t=1; //in sekunden
+var intervallzeit=20;
+var aktuellezeit=0;
+
+
+function simulation(){
+
+P=140*Math.pow(10,9)*lamda*Math.exp(-lamda*intervallzeit);
+
+var min = 0;
+var max = 1;
+var randomnumber = (Math.random() * (max - min)) + min;
+ntimes+=1;
+//alert("dauer: "+dauer+"ntimes: "+ntimes+"inverallzeit: "+intervallzeit+"P: "+P+"randomnumber: "+randomnumber);
+//alert(lamda);
+if(randomnumber<=P){
+zahl+=1;
+ziffern_darstellen();
+
+}
+
+aktuellezeit=ntimes*intervallzeit;
+
+
+if(aktuellezeit>=dauer){
+			clearInterval(status_interval_funktion);
+			ntimes=0;
+			aktuellezeit=0;
+		}
+
+
+
+
+} */
+//alt
+
+
+/*
+
+$("#hz_2").on(clickEvent, function(){
+
+	hz_2index==1 ? $('#maske').hide() : $('#maske').show();				
+
+});
+*/
+}
+
+
+
+
+
+
+
+</script>
+
